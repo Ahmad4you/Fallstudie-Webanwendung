@@ -1,0 +1,138 @@
+#carouselExampleCaptions {
+    width: 100%;
+    /*max-width: 1200px; /* Maximale Breite auf größeren Bildschirmen */
+    margin: 0 auto;
+    overflow: hidden;
+    height: 600px;
+}
+
+/* Indikator-Punkte */
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-indicators button.active {
+    background-color: #fff;
+}
+
+/* Beschriftungen */
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    right: 10%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.carousel-caption h5 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 16px;
+}
+
+/* Seitenverhältnis-Trick für responsive Höhe */
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* (9 / 16 = 0.5625) Der Padding-Trick erzeugt ein 16:9 Seitenverhältnis.  */
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    object-fit: cover; /* die Bilder den Container ausfüllen und dabei ihr Seitenverhältnis beibehalten. */
+}
+
+/* Responsive Anpassungen */
+@media (min-width: 768px) {
+    .card {
+        height: 100%;
+    }
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 768px) {
+    .carousel-caption {
+        bottom: 30px;
+        left: 5%;
+        right: 5%;
+        padding: 10px;
+    }
+}
+@media (max-width: 576px) {
+    .carousel-inner {
+        padding-top: 100%; 
+    }
+}
+@media (max-width: 1600px) {
+    .carousel-caption {
+        bottom: 300px;
+        left: 5%;
+        right: 5%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .carousel-caption {
+        bottom: 200px;
+        left: 5%;
+        right: 5%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .carousel-caption {
+        bottom: 100px;
+        left: 5%;
+        right: 5%;
+        padding: 10px;
+    }
+} 
+
+.logo-img {
+    height: 40px;
+    width: auto;
+}
+
+/* FOOTER  */
+.custom-list {
+    padding-left: 0;
+}
+
+.custom-list li {
+    margin-bottom: 0.5rem;
+}
+
+.custom-list a {
+    text-decoration: none;
+    color: #333; /* Oder eine andere Farbe Ihrer Wahl */
+}
+
+.custom-list a:hover {
+    text-decoration: underline;
+}
+
+#adress, pre {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
