@@ -1,3 +1,5 @@
-# Fallstudie-Programmierung von Webanwendungsoberflaechen
-IU-Hochschule
-IPWA01-01
+# Fallstudie- Web Seite
+
+- IU-Hochschule
+- Aufgabenstellung zum Kurs: IPWA01-01
+- Modul: Programmierung von Webanwendungsoberflächen
